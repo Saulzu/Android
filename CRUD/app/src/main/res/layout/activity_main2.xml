@@ -1,181 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity2">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="68pt"
-        android:text="ALTAS"
-        android:textColor="#3BD4AE"
-        android:textStyle="bold"
-        android:textSize="25dp"/>
+    <ImageView
+        android:id="@+id/imagenFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/musica"
+        android:scaleType="centerCrop" />
 
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20pt"
-        android:layout_marginLeft="40pt"
-        android:orientation="horizontal">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity2">
 
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/text0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Clave:"
-            android:textSize="20dp"/>
+            android:layout_marginLeft="99dp"
+            android:layout_marginTop="50pt"
+            android:text="Nuevo cancion"
+            android:textColor="@color/white"
+            android:textSize="32dp"/>
 
-        <EditText
-            android:layout_width="35dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/clave" />
-    </GridLayout>
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3pt"
-        android:layout_marginLeft="40pt"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/text1"
+        <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre del Libro:"
-            android:textSize="20dp"/>
+            android:layout_marginTop="5pt"
+            android:layout_marginStart="32pt"
+            android:orientation="horizontal">
 
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/nomL" />
-    </GridLayout>
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3pt"
-        android:layout_marginLeft="40pt"
-        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Clave:"
+                android:textSize="16dp"/>
 
-        <TextView
-            android:id="@+id/text2"
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:shadowColor="@color/white"
+                android:textColor="@color/white"
+                android:enabled="false"
+                android:id="@+id/editClave" />
+
+        </GridLayout>
+
+        <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre del Autor:"
-            android:textSize="20dp"/>
+            android:layout_marginTop="3pt"
+            android:layout_marginLeft="32pt"
+            android:orientation="horizontal">
 
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/nomA" />
-    </GridLayout>
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10pt"
-        android:layout_marginLeft="40pt"
-        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Nombre de la cancion:"
+                android:textSize="16dp"/>
 
-        <TextView
-            android:id="@+id/text3"
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textColor="@color/white"
+                android:id="@+id/editTitulo" />
+        </GridLayout>
+
+        <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Genero:"
-            android:textSize="17dp"/>
+            android:layout_marginTop="3pt"
+            android:layout_marginLeft="32pt"
+            android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/masc"
-            android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Autor:"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textColor="@color/white"
+                android:id="@+id/editAutor" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="M" />
+            android:layout_marginTop="3pt"
+            android:layout_marginLeft="65dp"
+            android:orientation="horizontal">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="1dp"
+                android:textColor="@color/white"
+                android:id="@+id/newcombito"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/white"
+                android:id="@+id/newcombito2"/>
+        </GridLayout>
 
-        <RadioButton
-            android:id="@+id/fem"
-            android:layout_width="match_parent"
+        <GridLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="F" />
+            android:layout_marginTop="15pt"
+            android:layout_marginLeft="30pt"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonInicia"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="#737373"
+                android:backgroundTint="#3BD4AE"
+                android:textSize="8pt"
+                android:text="Nueva"/>
+            <Button
+                android:id="@+id/buttonRegresa"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5pt"
+                android:textColor="#737373"
+                android:backgroundTint="#3BD4AE"
+                android:textSize="8pt"
+                android:text="Regresar"/>
+        </GridLayout>
 
-        <RadioButton
-            android:id="@+id/otro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="O" />
+    </LinearLayout>
 
-    </GridLayout>
-
-
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10pt"
-        android:layout_marginLeft="40pt"
-        android:orientation="horizontal">
-
-        <Spinner
-            android:id="@+id/cate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <Spinner
-            android:id="@+id/gen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </GridLayout>
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40pt"
-        android:layout_marginTop="15dp"
-        android:text="Pasta Dura" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40pt"
-        android:layout_marginTop="10dp"
-        android:text="Pasta Blanda" />
-
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15pt"
-        android:layout_marginLeft="35pt"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/alt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/background_light"
-            android:backgroundTint="#3BD4AE"
-            android:textSize="8pt"
-            android:text="Agregar" />
-
-        <Button
-            android:id="@+id/reg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25pt"
-            android:textColor="@android:color/background_light"
-            android:backgroundTint="#3BD4AE"
-            android:textSize="8pt"
-            android:text="Regresar" />
-
-    </GridLayout>
-
-
-
-</LinearLayout>
+</FrameLayout>

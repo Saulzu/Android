@@ -1,50 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_marginLeft="58pt"
-        android:layout_marginTop="20pt"
-        android:textColor="@android:color/background_light"
-        android:backgroundTint="#3BD4AE"
-        android:text="Altas"
-        android:textSize="20dp"
-        android:id="@+id/altas"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_marginTop="20pt"
-        android:layout_marginLeft="58pt"
-        android:textColor="@android:color/background_light"
-        android:backgroundTint="#3BD4AE"
-        android:text="Bajas"
-        android:textSize="20dp"
-        android:id="@+id/bajas"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_marginTop="20pt"
-        android:layout_marginLeft="55pt"
-        android:textColor="@android:color/background_light"
-        android:backgroundTint="#3BD4AE"
-        android:text="Cambios"
-        android:textSize="20dp"
-        android:id="@+id/cambios"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_marginTop="20pt"
-        android:layout_marginLeft="55pt"
-        android:textColor="@android:color/background_light"
-        android:backgroundTint="#3BD4AE"
-        android:text="Consultas"
-        android:textSize="20dp"
-        android:id="@+id/consultas"/>
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imagenFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/musica"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/titlemain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25pt"
+            android:layout_marginTop="55pt"
+            android:text="Biblioteca de música"
+            android:textColor="@color/white"
+            android:textSize="32dp"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12pt"
+            android:layout_marginLeft="46pt"
+            android:textColor="#737373"
+            android:backgroundTint="#3BD4AE"
+            android:text="Nueva canción"
+            android:textSize="16dp"
+            android:id="@+id/altas"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4pt"
+            android:layout_marginLeft="46pt"
+            android:textColor="#737373"
+            android:backgroundTint="#3BD4AE"
+            android:text="Borrar canción"
+            android:textSize="16dp"
+            android:id="@+id/bajas"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4pt"
+            android:layout_marginLeft="46pt"
+            android:textColor="#737373"
+            android:backgroundTint="#3BD4AE"
+            android:text="Cambiar canción"
+            android:textSize="16dp"
+            android:id="@+id/cambios"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4pt"
+            android:layout_marginLeft="46pt"
+            android:textColor="#737373"
+            android:backgroundTint="#3BD4AE"
+            android:text="Consultar canción"
+            android:textSize="16dp"
+            android:id="@+id/consultas"/>
+
+    </LinearLayout>
+
+</FrameLayout>
